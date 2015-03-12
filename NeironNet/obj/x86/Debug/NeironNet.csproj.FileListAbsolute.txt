@@ -1,0 +1,8 @@
+E:\GitHub\NeironNet\NeironNet\bin\Debug\NeironNet.exe
+E:\GitHub\NeironNet\NeironNet\bin\Debug\NeironNet.pdb
+E:\GitHub\NeironNet\NeironNet\obj\x86\Debug\NeironNet.Form1.resources
+E:\GitHub\NeironNet\NeironNet\obj\x86\Debug\NeironNet.Properties.Resources.resources
+E:\GitHub\NeironNet\NeironNet\obj\x86\Debug\NeironNet.csproj.GenerateResource.Cache
+E:\GitHub\NeironNet\NeironNet\obj\x86\Debug\NeironNet.exe
+E:\GitHub\NeironNet\NeironNet\obj\x86\Debug\NeironNet.pdb
+E:\GitHub\NeironNet\NeironNet\obj\x86\Debug\NeironNet.csprojResolveAssemblyReference.cache
