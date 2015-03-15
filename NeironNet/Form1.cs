@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace NeironNet
 {
+
     public partial class Form1 : Form
     {
+
         Bitmap input = new Bitmap(Image.FromFile("res/white.bmp"));
         List<Neiron> leterWeb = new List<Neiron>();
         Neiron currentNeiron;
@@ -23,14 +25,16 @@ namespace NeironNet
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string Chars = "АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
-            foreach (Char ch in Chars) 
+            NeironNet.Dubug.console = ConsoleBox;
+            NeironNet.Dubug.Log("Initialisation...");
+            string chars = "АБВГДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЮЯЭ";
+            for (int i = 0; i < chars.Length; i++ )
             {
-                NeironSelector.Items.Add(ch);
-                leterWeb.Add(new Neiron(ch));
-                leterWeb[leterWeb.Count - 1].Init();
+                NeironSelector.Items.Add(chars[i]);
+                leterWeb.Add(new Neiron(chars[i]));
+                NeironNet.Dubug.Log("Neiron " + chars[i] + " is loaded");
             }
-        }
+        }   
 
         private void NeironSelector_SelectedIndexChanged(object sender, EventArgs e)
         {

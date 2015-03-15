@@ -43,6 +43,7 @@
             this.MemoryDisplay = new System.Windows.Forms.PictureBox();
             this.NeironSelector = new System.Windows.Forms.ComboBox();
             this.TeachImageSelect = new System.Windows.Forms.OpenFileDialog();
+            this.ConsoleBox = new System.Windows.Forms.TextBox();
             this.MainTabs.SuspendLayout();
             this.tabLearn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeacherDisplay)).BeginInit();
@@ -208,22 +209,37 @@
             // 
             this.TeachImageSelect.FileName = "TeachImageSelect";
             // 
+            // ConsoleBox
+            // 
+            this.ConsoleBox.Location = new System.Drawing.Point(4, 517);
+            this.ConsoleBox.Multiline = true;
+            this.ConsoleBox.Name = "ConsoleBox";
+            this.ConsoleBox.ReadOnly = true;
+            this.ConsoleBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ConsoleBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.ConsoleBox.Size = new System.Drawing.Size(792, 133);
+            this.ConsoleBox.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 502);
+            this.ClientSize = new System.Drawing.Size(799, 662);
+            this.Controls.Add(this.ConsoleBox);
             this.Controls.Add(this.MainTabs);
-            this.MaximumSize = new System.Drawing.Size(815, 540);
-            this.MinimumSize = new System.Drawing.Size(815, 540);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(815, 700);
+            this.MinimumSize = new System.Drawing.Size(815, 70);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.MainTabs.ResumeLayout(false);
             this.tabLearn.ResumeLayout(false);
             this.tabLearn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TeacherDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MemoryDisplay)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -244,6 +260,7 @@
         private System.Windows.Forms.Label LabelResult;
         private System.Windows.Forms.Button GetResult;
         private System.Windows.Forms.Button ButtonTeacher;
+        private System.Windows.Forms.TextBox ConsoleBox;
     }
 }
 

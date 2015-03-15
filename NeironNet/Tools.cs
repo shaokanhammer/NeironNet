@@ -55,6 +55,5 @@ namespace NeironNet
                         m.SetPixel(i, j, Color.FromArgb(255, inp[i, j] * (-1), 0, 0));
             return (Image)m;
         }
-
     }
 }
